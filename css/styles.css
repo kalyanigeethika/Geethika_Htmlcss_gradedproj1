@@ -1,0 +1,315 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    width: 100%;
+  }
+
+/* Header */
+.header {
+    background-color: #4C4E52;
+    color: #ffffff;
+    padding: 15px;
+    text-align:right;
+}
+h1 {    
+    margin-right: 8%;
+}
+/* Header Ends */
+
+/* Navigation Bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #333; 
+}
+ul li:first-child {
+    margin-left:32px;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Navigation Bar Ends */
+
+/* Images container */
+.images-loader .images{
+  width:100%;
+  height:1200px;
+  border: 4px solid steelblue;
+  animation-name: fadeIn;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  position:relative;
+}
+@keyframes fadeIn {
+  0% {
+    background-image: url(../images/animation/ani1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  25% {
+    background-image: url(../images/animation/ani2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  50% {
+    background-image: url(../images/animation/ani3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  75% {
+    background-image: url(../images/animation/ani4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  100% {
+    background-image: url(../images/animation/ani5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+/* Images container ends */
+
+/* Products */
+h3 {    
+  margin: 1%;
+}
+
+.section-heading
+{
+ display: block;
+ margin-left: 1%;
+}
+.row
+{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.card
+{  
+  background-color: #E6E6FA;
+  width: 325px;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0.3rem;
+}
+
+.card_image img{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width:100%
+}
+
+.card .heading
+{
+  font-weight: bold;
+}
+
+.card .text
+{
+  color: #6a5acd;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 10px;
+}
+.btn{
+  width: 100%;
+  border-radius:5px;
+  border: 2px solid #6a5acd;
+  padding:5px;
+  color: #ffae42;
+  font-weight: bold;
+  background-color: #E6E6FA;
+}
+
+/* Products End */
+
+/* form */
+
+.lab-container
+{
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+
+.lab-form-left {
+  padding: 10px;
+  flex: 50%;
+  position: relative;
+}
+.form-group
+{
+  flex: 50%;
+  position: relative;
+}
+.lab-img-right {
+  padding: 10px;
+  flex: 50%;
+  background-image: url(../images/labtest/lab-test.jpg);  
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50% 100%;
+}
+.clearfix{  
+  margin: 25px auto 0px auto;
+  width: 20%;
+}
+.clearfix input{
+  background-color: #6a5acd;
+  color: #fff;
+  padding: 5px 20px;
+  border: none;
+}
+.clearfix input:first-child{
+  margin-right:25%;
+}
+input[type=text], input[type=email] {
+  width: 48%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 2px solid rgb(133, 133, 133);
+}
+
+input:focus
+{
+ border: none;
+ border-bottom: 2px solid rgb(133, 133, 133);
+}
+input[type=datetime-local] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+select{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid rgb(133, 133, 133);
+}
+
+.check
+{  
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox{
+  font-size:15px;
+  display:block;
+}
+
+.radio label{
+  font-size:15px;
+}
+/* form ends */
+
+/* footer css */
+.footer
+{
+ background-color:	#000000;
+ text-align:center;
+ color: #ffffff;
+ padding: 5px; 
+ margin-top: 3%;
+}
+/* footer css ends*/
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+/* Navigation Bar Responsive */
+ ul {
+    justify-content: left;
+    flex-direction: column;
+  }
+
+ul li:first-child {
+    margin-left:0px;
+  }
+
+  .card {
+    width: 100%;
+  }
+  .lab-container
+{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  flex-direction: column;
+}
+.lab-form-left {
+  padding: 10px;
+  flex: 100%;
+  position: relative;
+}
+input[type=text], input[type=email], select, input[type=datetime-local]{
+  width: 100%;
+}
+.lab-img-right {
+  background-size: 50% 50%;
+}
+.clearfix::after {
+  content: "";
+  clear:both;
+}
+.clearfix{  
+  margin-left: 25%;
+  width: 50%;
+}
+}
+/* Navigation Bar Responsive Ends */
+
+/* Responsive */
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <form action="#">
+  <div class="lab-container">
+    <div class="lab-form-left">
+        <h5>1. Your Contact Details</h5>
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Full Name" required>
+          <input type="text" id="ptid" name="ptid" placeholder="Patient Id(if exists)" required>
+          <input type="text" id="cname" name="cname" placeholder="Contact Number" required>
+          <input type="email" id="email" name="email" placeholder="Email id" required>
+        </div>
+        <h5>2. Address</h5>
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="H-No" required>
+          <input type="text" id="ptid" name="ptid" placeholder="Street" required>
+          <input type="text" id="cname" name="cname" placeholder="Area" required>
+          <h6>District</h6>
+          <select name="district" id="districts" required>
+            <option value="choose">Choose</option>
+            <option value="vizag">Vizag</option>
+            <option value="guntur">Guntur</option>
+            <option value="chitoor">Chitoor</option>
+          </select>
+        </div>
+        <h5>3. Choose the Test Type</h5>
+        <div class="form-group">
+          <div class="checkbox">
+            <input type="checkbox" class="check" id="cbc" />
+            <label for="cbc">CBC</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="check" id="urine" />
+            <label for="urine">Complete Urine</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="check" id="lp" />
+            <label for="lp">Lipid Profile</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="check" id="tsh" />
+            <label for="tsh">Thyroid Stimulating Hormone(TSH)</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="check" id="glutest" />
+            <label for="glutest">Glucose Test</label>
+          </div>
+        </div>
+        <h5>4. Do you want a hard copy of the report also?</h5>
+        <div class="form-group">
+          <div class="radio">
+            <input type="radio" id="yes" name="yes"><label for="yes">Yes</label>
+            <input type="radio" id="no" name="no"><label for="yes">No</label>
+          </div>
+        </div>
+        <h5>5. Select Your Comfortable Date and Time</h5>
+        <div class="form-group">
+          <div class="radio">
+            <input type="datetime-local" id="apptdatetime" name="apptdatetime">
+          </div>
+        </div>
+    </div>
+    <div class="lab-img-right">
+    </div>
+  </div>
+  <div class="clearfix">
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+  </div>
+</form>
+</body>
+
+</html>
